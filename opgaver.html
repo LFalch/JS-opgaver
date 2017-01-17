@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascriptopgaver</title>
+    <link rel="stylesheet" type"text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <nav>
+      <ul id="navbar">
+        <li>
+          <a href="#Side1" onclick="vismig('Side1')">Side 1</a>
+        </li>
+        <li>
+          <a href="#Side2" onclick="vismig('Side2')">Side 2</a>
+        </li>
+      </ul>
+    </nav>
+    <article id="Side1" class="content visible">
+      <h1>Side 1</h1>
+      <p>Tingting</p>
+      <p>sådan laver man en knap</p>
+      <p>
+        <button id="visdato">Vis datoen idag</button>
+      </p>
+      <p id="datoFelt"></p>
+      <form action="#">
+        <label for="h1colour">Headerfarve:<input type="text" name="h1colour" value=""></label><br>
+        <label for="pcolour">Afsnitsfarve:<input type="text" name="pcolour" value=""></label><br>
+        <label for="font">Skriftype:<input type="text" name="font" value=""></label><br>
+        <input type="button" name="skift" value="Anvend">
+      </form>
+      <h1>Indsæt ny side</h1>
+      <form action="#">
+        <label for="title">Sidenavn: <br><input type="text" name="title" value="prut"></label><br>
+        <label for="body">Indhold: <br><textarea name="body" rows="16" cols="40"></textarea></label><br>
+        <input type="button" name="lavside" value="Lav side">
+      </form>
+    </article>
+    <article id="Side2" class="content">
+      <h1>Side 2</h1>
+      <p>Tingting2</p>
+    </article>
+  </body>
+  <script src="main.js" charset="utf-8"></script>
+</html>

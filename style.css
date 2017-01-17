@@ -1,0 +1,22 @@
+#Side1 {
+  background-color:blue;
+  color:white;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.content {
+  opacity:0;
+  position:absolute;
+  transition: all .6s;
+}
+
+.content.visible {
+  opacity:1;
+}
+
+body{
+  width: 	50%
+}
