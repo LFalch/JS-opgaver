@@ -1,7 +1,7 @@
 function vismig(sideId){
   $('.content').removeClass('visible');
 
-  $('#'+sideId.replace(/\s/g, "-")).addClass("visible");
+  $('#'+sideId).addClass("visible");
   updateColours();
 }
 
@@ -52,10 +52,9 @@ $.valHooks.textarea = {
 $('[name=lavside]').click(function() {
   var sideNavn = $('[name=title]').val();
   $('[name=title]').val('');
-  var id = sideNavn.replace(/\s/g, "-");
+  var id = sideNavn.replace(/\W/g, "a");
   var inner = $('[name=body]').val();
   $('[name=body]').val('');
-  console.log(id + ', ' + inner);
   $('body').append('<article id="' + id + '" class="content">' +
   inner + '</article>');
 
